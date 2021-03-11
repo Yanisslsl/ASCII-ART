@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>ASCII-ART.com</title>
+   
+    <link href="style1.css" rel="stylesheet">
+   
+
+</head>
+<body>
+    
+  
+    <div class="container">
+        
+         <header>
+            <div class="text-menu">
+                   
+                <p class="text-style-1">Générer du texte en</p><br> <p class="text-style-2">ASCII</p><p class="text-style-1">où vous le voulez</p> <p class="text-style-3" >quand </p><p class="text-style-1">vous le voulez ...</p>
+
+            </div>
+             
+            
+            
+            <div class="header">
+
+             
+         
+           
+                <form method="POST" action="/" >  
+
+                    <div class="optcolumn">
+
+                        <div class="opt-1">
+
+                                  <label for="fonts" class="text-xl font-medium text-white mr-1">Fonts</label>
+                                                  <select id="fonts" name="fonts" class="mr-2" >
+                                                  <option value="standard">standard </option>
+                                                  <option value="shadow">shadow </option>
+                                                  <option value="thinkertoy">thinkertoy </option>
+                                                  </select>
+                            
+                        </div>
+                      
+                       
+
+                      
+
+
+
+                            
+                           
+                          
+                           
+
+                    </div>
+               
+
+
+                
+                    
+                        
+                    
+                         
+                       
+                         
+                     
+                    
+
+                 
+               
+                
+                
+                <input type="text" class="text" name="ascci-input" value="" placeholder="Type something">
+                
+                     <button type="submit" class="button"  value="Submit">Submit</button>
+                       
+                 
+                </form>
+                
+
+           
+             </div>
+            
+           
+            
+        </header>
+        <br>
+        <br>
+        <br>
+        <br>
+        <pre class="pres">{{ .Title }}</pre>
+
+
+        
+    </div>
+        
+       
+    <footer>
+
+        <p class="copyright"> ©	Copyright Martial Desmaison Valentin Diologent Yaniss Loisel 	 </p>
+
+</footer>
+
+
+   
+
+
+</body>
+
+<style>
+
+
+
+@font-face
+{
+    font-family: 'Open Sans';
+    src : url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+}
+
+body{
+    margin:0 auto;
+    width:80%;
+    height: 1200px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1600 900'%3E%3Cpolygon fill='%23011630' points='957 450 539 900 1396 900'/%3E%3Cpolygon fill='%230d89d7' points='957 450 872.9 900 1396 900'/%3E%3Cpolygon fill='%23011630' points='-60 900 398 662 816 900'/%3E%3Cpolygon fill='%230089df' points='337 900 398 662 816 900'/%3E%3Cpolygon fill='%23011630' points='1203 546 1552 900 876 900'/%3E%3Cpolygon fill='%230089e8' points='1203 546 1552 900 1162 900'/%3E%3Cpolygon fill='%23011630' points='641 695 886 900 367 900'/%3E%3Cpolygon fill='%230089f0' points='587 900 641 695 886 900'/%3E%3Cpolygon fill='%23011630' points='1710 900 1401 632 1096 900'/%3E%3Cpolygon fill='%230088f8' points='1710 900 1401 632 1365 900'/%3E%3Cpolygon fill='%23011630' points='1210 900 971 687 725 900'/%3E%3Cpolygon fill='%230387ff' points='943 900 1210 900 971 687'/%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;
+    
+}
+
+
+
+.container{
+  
+    width:100%;
+    height:1200px;
+   
+    
+    
+    
+}
+.header{
+    border-radius: 14px;
+    
+    --tw-bg-opacity: 1;
+    background-color: rgba(96, 165, 250, var(--tw-bg-opacity));
+    height: 100%;
+}
+
+.text-menu {
+    display: flex;
+    align-items: space-between;
+    width: auto;
+}
+.text-style-1 {
+    font-size: 2rem;
+    text-align: center;
+    margin: 1.5rem;
+    line-height: 2rem;
+    
+    color:rgba(96, 165, 250);
+    
+}
+.text-style-2 {
+    font-size: 5rem;
+    text-align: center;
+    margin: 1.5rem;
+    line-height: 4rem;
+    background: -webkit-linear-gradient(rgba(96, 165, 250), black); 
+    -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+    
+    color: rgba(29, 78, 216);
+    
+}
+.text-style-3 {
+    font-size: 2rem;
+    text-align: center;
+    margin: 1rem;
+    
+    background: -webkit-linear-gradient(rgba(96, 165, 250), black);
+    -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+    
+    color: rgba(29, 78, 216);
+    
+}
+
+.button {
+    background-color: rgba(96, 165, 250);
+    border: none;
+    color: white;
+    
+    height: 100%;
+    text-align: center;
+    text-decoration: none;
+    
+    font-size: 16px;
+   
+    
+  }
+
+  .button:hover {
+    background-color:rgba(29, 78, 216);
+
+  }
+
+  form {
+      display: flex;
+      background-color: rgba(96, 165, 250);
+      justify-content: space-between;
+      
+      height: 60px;
+      
+  }
+
+  #ascii-input {
+      height: 100%;
+  }
+
+  .optcolumn {
+      
+      width: 30%;
+      height: auto;
+      display: flex;
+      
+      justify-content: space-around;
+     
+  }
+
+.opt-1 {
+    
+        color: white;
+         font-size: 1.5em;
+         width: 10%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+}
+
+
+.text {
+    width: 80%;
+    
+}
+
+.pres{
+    background-color:white;
+    height: 20%;
+    width: 100%;
+    margin: 0 auto;
+    border: 3px outset rgba(96, 165, 250);
+    border-radius: 15px;
+}
+
+.copyright {
+    color: white;
+    text-align: center;
+    font-size: 20px;
+}
+
+
+
+@media all and (max-width: 1024px){
+    body {
+        width: 95%;
+    }
+    .text-menu {
+    display: flex;
+    flex-direction: column;
+    
+}
+    .text-style-1 {
+  
+    margin: 5px;
+    margin-left:0px;
+    
+    
+}
+.text-style-2 {
+    
+    
+    margin: 5px;
+    
+    
+}
+.optcolumn {
+      
+      width: 30%;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+     
+     
+  }
+
+    
+   
+}
+@media all and (min-width: 1024px) and (max-width: 1280px){
+
+    .text-style-1 {
+  
+        font-size: 1.25rem;
+  
+  
+}
+.text-style-2 {
+    font-size: 3rem;
+  
+  
+  
+  
+  
+}
+.optcolumn {
+      
+      width: 30%;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+     
+     
+  }
+
+
+
+
+
+
+
+}
+
+
+
+
+</style>
+
+
+
+</html>
